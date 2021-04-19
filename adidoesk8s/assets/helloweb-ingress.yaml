@@ -10,3 +10,10 @@ spec:
   backend:
     serviceName: helloweb-backend
     servicePort: 8080
+  rules:
+  -http:
+      paths:
+      - path: /
+        backend:
+          serviceName: helloweb-backend
+          servicePort: 80
