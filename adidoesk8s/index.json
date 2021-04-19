@@ -18,7 +18,7 @@
     },
     "assets": {
         "host01": [
-            {"file": "manifests/test.txt", "target": "/root/", "chmod": "+rw"}
+            {"file": "test.txt", "target": "/root/", "chmod": "+rw"}
         ]
     }
   },
