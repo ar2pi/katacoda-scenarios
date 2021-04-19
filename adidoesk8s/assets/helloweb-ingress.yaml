@@ -16,4 +16,4 @@ spec:
       - path: /
         backend:
           serviceName: helloweb-backend
-          servicePort: 80
+          portDeService: 80
