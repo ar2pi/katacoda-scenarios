@@ -20,9 +20,8 @@
         "host01": [
             {"file": "helloweb-deployment.yaml", "target": "/root/", "chmod": "+rw"},
             {"file": "helloweb-hpa.yaml", "target": "/root/", "chmod": "+rw"},
-            {"file": "helloweb-ingress-static-ip.yaml", "target": "/root/", "chmod": "+rw"},
-            {"file": "helloweb-service-load-balancer.yaml", "target": "/root/", "chmod": "+rw"},
-            {"file": "helloweb-service-static-ip.yaml", "target": "/root/", "chmod": "+rw"}
+            {"file": "helloweb-ingress.yaml", "target": "/root/", "chmod": "+rw"},
+            {"file": "helloweb-nodeip.yaml", "target": "/root/", "chmod": "+rw"}
         ]
     }
   },
@@ -30,7 +29,7 @@
     "uilayout": "terminal",
     "showdashboard": true,
     "dashboards": [
-        {"name": "Open Port 8080", "port": 8080}
+        {"name": "Open Port 30666", "port": 30666}
     ]
   },
   "backend": {
