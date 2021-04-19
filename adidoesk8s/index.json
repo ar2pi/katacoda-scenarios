@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Good luck!",
+        "title": "Well hello there",
         "text": "step1.md"
       }
     ],
@@ -18,7 +18,11 @@
     },
     "assets": {
         "host01": [
-            {"file": "test.txt", "target": "/root/", "chmod": "+rw"}
+            {"file": "helloweb-deployment.yaml", "target": "/root/", "chmod": "+rw"},
+            {"file": "helloweb-hpa.yaml", "target": "/root/", "chmod": "+rw"},
+            {"file": "helloweb-ingress-static-ip.yaml", "target": "/root/", "chmod": "+rw"},
+            {"file": "helloweb-service-load-balancer.yaml", "target": "/root/", "chmod": "+rw"},
+            {"file": "helloweb-service-static-ip.yaml", "target": "/root/", "chmod": "+rw"}
         ]
     }
   },
@@ -26,9 +30,7 @@
     "uilayout": "terminal",
     "showdashboard": true,
     "dashboards": [
-        {"name": "URL", "href": "https://www.google.co.uk"},
-        {"name": "Port 80", "port": 80},
-        {"name": "Placeholder", "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"}
+        {"name": "Open Port 8080", "port": 8080}
     ]
   },
   "backend": {
